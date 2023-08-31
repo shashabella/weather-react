@@ -1,8 +1,14 @@
-import logo from "./logo.svg";
 import axios from "axios";
 import "./App.css";
 
 function App() {
+  function handleResponse(response) {
+    alert(`The weather in New York is ${response.data.main.temp}°C`);
+  }
+  let apiKey = "5981bb6e099bf047fb0ade85502f44fa";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=New York&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(handleResponse);
+
   return (
     <div className="App">
       <div class="container">
