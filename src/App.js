@@ -29,7 +29,7 @@ function App() {
                 </div>
               </div>
             </form>
-            <h1 id="city"></h1>
+            <h1 id="city">Weather</h1>
             <ul class="condition">
               <li>
                 Last updated: <span id="date"></span>
@@ -47,7 +47,12 @@ function App() {
                       °C
                     </a>{" "}
                     |
-                    <a href="" id="fahren">
+                    <a
+                      href="
+                    "
+                      id="fahren"
+                      rel="noreferrer"
+                    >
                       °F
                     </a>
                   </span>
@@ -74,6 +79,7 @@ function App() {
               href="https://github.com/shashabella/Vanilla-Weather-App"
               target="_blank"
               class="source-code"
+              rel="noreferrer"
             >
               Open-source code
             </a>
@@ -81,7 +87,6 @@ function App() {
           </small>
         </div>
       </div>
-      <script src="index.js"></script>
     </div>
   );
 }
